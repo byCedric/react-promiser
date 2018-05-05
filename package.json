@@ -1,0 +1,35 @@
+{
+	"name": "react-promiser",
+	"version": "0.0.0",
+	"description": "A react component to help manage promises",
+	"keywords": [
+		"react",
+		"promise",
+		"bycedric"
+	],
+	"author": "Cedric van Putten <me@bycedric.com>",
+	"license": "MIT",
+	"homepage": "https://github.com/bycedric/react-promiser#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/bycedric/react-promiser.git"
+	},
+	"bugs": {
+		"url": "https://github.com/bycedric/react-promiser/issues"
+	},
+	"main": "./build/index.js",
+	"types": "./build/index.d.ts",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "tsc"
+	},
+	"peerDependencies": {
+
+	},
+	"dependencies": {
+
+	},
+	"devDependencies": {
+
+	}
+}
