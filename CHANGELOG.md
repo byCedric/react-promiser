@@ -1,3 +1,9 @@
+# [0.1.1](https://github.com/open-sdk/framework/releases/tag/0.1.0) (2018-05-12)
+
+## Bug fixes
+
+- exclude additional files from npm package ([77bf7c4](https://github.com/byCedric/react-promiser/commit/77bf7c483f375e73a798d0bb29071bce15b33a0a))
+
 # [0.1.0](https://github.com/open-sdk/framework/releases/tag/0.1.0) (2018-05-12)
 
 ## New features
