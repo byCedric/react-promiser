@@ -1,8 +1,6 @@
 import { Component } from 'react';
 import { PromiseState, PromiseProps, PromiseFactory } from './types';
 
-export type PromiseHandler<T> = PromiseState<T> & { resolve: PromiseFactory<T> };
-
 export default <T>(manager: Component, promise: PromiseFactory<T>): PromiseFactory<T> => {
 	return (...params) => {
 		manager.setState({
