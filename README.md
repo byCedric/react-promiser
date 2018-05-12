@@ -15,17 +15,17 @@ import Promiser from 'react-promiser';
 import { LoadingState, ErrorState, EmptyState, ResultState } from './states';
 
 function MyComponent() {
-	return (
-		<Promiser auto promise={() => axios.get('https://api.example.com/my-endpoint')}>
-			{({ result, error, pending, fulfilled, rejected }) => {
-				if (pending) return <LoadingState />;
-				if (rejected) return <ErrorState error={error} />;
-				if (fulfilled && result) return <ResultState result={result} />;
+    return (
+        <Promiser auto promise={() => axios.get('https://api.example.com/my-endpoint')}>
+            {({ result, error, pending, fulfilled, rejected }) => {
+                if (pending) return <LoadingState />;
+                if (rejected) return <ErrorState error={error} />;
+                if (fulfilled && result) return <ResultState result={result} />;
 
-				return <EmptyState />;
-			}}
-		</Promiser>
-	);
+                return <EmptyState />;
+            }}
+        </Promiser>
+    );
 }
 ```
 
