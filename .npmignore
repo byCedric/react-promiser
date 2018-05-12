@@ -1,7 +1,11 @@
+/coverage
 /src
+/test
 .editorconfig
 .gitignore
 .npmignore
+.travis.yml
+codecov.yml
 tsconfig.json
 *.test.ts
 *.test.tsx
