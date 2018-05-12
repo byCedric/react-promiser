@@ -1,6 +1,6 @@
 {
 	"name": "react-promiser",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "A react component to help manage promises",
 	"keywords": [
 		"react",

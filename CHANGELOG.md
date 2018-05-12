@@ -1,4 +1,10 @@
-# [0.1.1](https://github.com/open-sdk/framework/releases/tag/0.1.0) (2018-05-12)
+# [0.1.2](https://github.com/open-sdk/framework/releases/tag/0.1.2) (2018-05-12)
+
+## Bug fixes
+
+- only src in build directory content ([ca52f4c](https://github.com/byCedric/react-promiser/commit/ca52f4cf420b9b94b94fad01cbe9dd5a8f4e15df))
+
+# [0.1.1](https://github.com/open-sdk/framework/releases/tag/0.1.1) (2018-05-12)
 
 ## Bug fixes
 
