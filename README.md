@@ -7,6 +7,28 @@
 
 A react component to help manage promises
 
+## Example
+
+```jsx
+import axios from 'axios';
+import Promiser from 'react-promiser';
+import { LoadingState, ErrorState, EmptyState, ResultState } from './states';
+
+function MyComponent() {
+	return (
+		<Promiser auto promise={() => axios.get('https://api.example.com/my-endpoint')}>
+			{({ result, error, pending, fulfilled, rejected }) => {
+				if (pending) return <LoadingState />;
+				if (rejected) return <ErrorState error={error} />;
+				if (fulfilled && result) return <ResultState result={result} />;
+
+				return <EmptyState />;
+			}}
+		</Promiser>
+	);
+}
+```
+
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
