@@ -10,19 +10,19 @@ A react component to help manage promises
 ## Example
 
 ```jsx
-import axios from 'axios';
-import Promiser from 'react-promiser';
-import { LoadingState, ErrorState, EmptyState, ResultState } from './states';
+import { Promiser } from 'react-promiser';
+import fetchMyData from './fetch';
+import * as State from './states';
 
 function MyComponent() {
     return (
-        <Promiser auto promise={() => axios.get('https://api.example.com/my-endpoint')}>
+        <Promiser auto promise={fetchMyData}>
             {({ result, error, pending, fulfilled, rejected }) => {
-                if (pending) return <LoadingState />;
-                if (rejected) return <ErrorState error={error} />;
-                if (fulfilled && result) return <ResultState result={result} />;
+                if (pending) return <State.Loading />;
+                if (rejected) return <State.Error error={error} />;
+                if (fulfilled && result) return <State.Result result={result} />;
 
-                return <EmptyState />;
+                return <State.Empty />;
             }}
         </Promiser>
     );
