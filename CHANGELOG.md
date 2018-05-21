@@ -1,3 +1,6 @@
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/bycedric/react-promiser/compare/0.1.2...0.2.0) (2018-05-21)
+
 # [0.1.2](https://github.com/open-sdk/framework/releases/tag/0.1.2) (2018-05-12)
 
 ## Bug fixes
