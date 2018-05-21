@@ -1,5 +1,7 @@
 # React Promiser
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/byCedric/react-promiser.svg)](https://greenkeeper.io/)
+
 [![Latest Release](https://img.shields.io/github/release/bycedric/react-promiser/all.svg?style=flat-square)](https://github.com/bycedric/react-promiser/releases)
 [![Build Status](https://img.shields.io/travis/byCedric/react-promiser/master.svg?style=flat-square)](https://travis-ci.org/byCedric/react-promiser)
 [![Codecov coverage](https://img.shields.io/codecov/c/github/byCedric/react-promiser.svg?style=flat-square)](https://codecov.io/gh/byCedric/react-promiser)
