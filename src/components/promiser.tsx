@@ -14,7 +14,7 @@ export interface PromiserState<T> extends PromiseState<T> {
 }
 
 export default class Promiser<T extends any> extends React.Component<PromiserProps<T>, PromiserState<T>> {
-	constructor(props) {
+	constructor(props: any) {
 		super(props);
 
 		this.state = this.initialiseState();
