@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import { PromiseState, PromiseProps, PromiseFactory } from './types';
+import { PromiseFactory } from './types';
 
 export default <T>(manager: Component, promise: PromiseFactory<T>): PromiseFactory<T> => {
 	return (...params) => {
