@@ -31,7 +31,7 @@ describe('utils/create-handler', () => {
 		const component = new FakeComponent();
 		const handler = createHandler(component, () => Promise.resolve('result'));
 
-		await expect(handler()).resolves.toMatch('result');
+		await expect(handler()).resolves.toBeUndefined();
 
 		expect(component.setState).toHaveBeenCalledWith({
 			status: 'fulfilled',
@@ -45,7 +45,7 @@ describe('utils/create-handler', () => {
 		const error = new Error('something went wrong');
 		const handler = createHandler(component, () => Promise.reject(error));
 
-		await expect(handler()).rejects.toThrowError(error.message);
+		await expect(handler()).resolves.toBeUndefined();
 
 		expect(component.setState).toHaveBeenCalledWith({
 			status: 'rejected',
