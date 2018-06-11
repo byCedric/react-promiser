@@ -5,6 +5,8 @@
 		"lib": ["es6"],
 		"module": "commonjs",
 		"moduleResolution": "node",
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
 		"outDir": "./build",
 		"rootDir": "./src",
 		"sourceMap": true,
