@@ -1,7 +1,7 @@
 /** All possible statuses of a single promise. */
 export type PromiseStatus = undefined | 'pending' | 'fulfilled' | 'rejected';
 /** A method to resolve the managed promise.  */
-export type PromiseFactory<T> = (...params: any[]) => Promise<T>;
+export type PromiseFactory<T> = (...params: any[]) => Promise<void>;
 
 export interface PromiseRendererHelpers {
 	/** If the promise is neither pending or settled. */
