@@ -3,14 +3,14 @@ import createHandler from '../utils/create-handler';
 import createHelpers from '../utils/create-helpers';
 import { PromiseState, PromiseProps, PromiseRenderer, PromiseFactory } from '../utils/types';
 
-export interface PromiserProps<T> extends PromiseProps<T> {
+export interface PromiserProps<T> extends PromiseProps {
 	/** The promise renderer with all data. */
-	children: (props: PromiseState<T> & PromiseRenderer<T>) => any;
+	children: (props: PromiseState<T> & PromiseRenderer) => any;
 }
 
 export interface PromiserState<T> extends PromiseState<T> {
 	/** A method to invoke the managed promise. */
-	resolve: PromiseFactory<T>;
+	resolve: PromiseFactory;
 }
 
 export default class Promiser<T extends any> extends React.Component<PromiserProps<T>, PromiserState<T>> {
