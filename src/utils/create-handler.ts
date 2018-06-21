@@ -10,15 +10,23 @@ export default <T>(manager: Component, promise: PromiseFactory<T>): PromiseFacto
 		});
 
 		return promise(...params)
-			.then(result => manager.setState({
-				result,
-				status: 'fulfilled',
-				error: undefined,
-			}))
-			.catch(error => manager.setState({
-				status: 'rejected',
-				result: undefined,
-				error,
-			}));
+			.then(result => {
+				manager.setState({
+					result,
+					status: 'fulfilled',
+					error: undefined,
+				});
+
+				return result;
+			})
+			.catch(error => {
+				manager.setState({
+					status: 'rejected',
+					result: undefined,
+					error,
+				});
+
+				return undefined;
+			});
 	};
 }
