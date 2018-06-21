@@ -1,7 +1,7 @@
 /** All possible statuses of a single promise. */
 export type PromiseStatus = undefined | 'pending' | 'fulfilled' | 'rejected';
 /** A method to resolve the managed promise.  */
-export type PromiseFactory = (...params: any[]) => Promise<void>;
+export type PromiseFactory<T> = (...params: any[]) => Promise<void>;
 
 export interface PromiseRendererHelpers {
 	/** If the promise is neither pending or settled. */
@@ -16,9 +16,9 @@ export interface PromiseRendererHelpers {
 	settled: boolean;
 }
 
-export interface PromiseRenderer extends PromiseRendererHelpers {
+export interface PromiseRenderer<T> extends PromiseRendererHelpers {
 	/** A method to execute the promise. */
-	resolve: PromiseFactory;
+	resolve: PromiseFactory<T>;
 }
 
 export interface PromiseState<T> {
@@ -32,9 +32,9 @@ export interface PromiseState<T> {
 	result?: T;
 }
 
-export interface PromiseProps {
+export interface PromiseProps<T> {
 	/** The promise factory to manage. */
-	promise: PromiseFactory;
+	promise: PromiseFactory<T>;
 	/** If the promise should be resolved automatically. */
 	auto?: boolean;
 }
