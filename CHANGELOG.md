@@ -1,3 +1,12 @@
+<a name="0.2.1"></a>
+## [0.2.1](https://github.com/bycedric/react-promiser/compare/0.2.0...0.2.1) (2018-10-28)
+
+
+### Bug Fixes
+
+* explicitly state variable type `any` ([7c33183](https://github.com/bycedric/react-promiser/commit/7c33183)), closes [#5](https://github.com/bycedric/react-promiser/issues/5)
+* faulty generic with promise rejection workaround ([5a904d4](https://github.com/bycedric/react-promiser/commit/5a904d4))
+
 <a name="0.2.0"></a>
 # [0.2.0](https://github.com/bycedric/react-promiser/compare/0.1.2...0.2.0) (2018-05-21)
 
