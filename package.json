@@ -13,9 +13,14 @@
 		"react-dom": "^16.6.0"
 	},
 	"devDependencies": {
+		"@types/enzyme": "^3.1.14",
 		"@types/jest": "23.3.8",
 		"@types/react": "16.4.18",
 		"@types/react-dom": "16.0.9",
+		"enzyme": "^3.7.0",
+		"enzyme-adapter-react-16": "^1.6.0",
+		"jest-chain": "^1.0.5",
+		"jest-enzyme": "^7.0.0",
 		"react-scripts": "2.0.6-next.c662dfb0",
 		"typescript": "3.1.3"
 	},
