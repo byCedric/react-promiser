@@ -8,10 +8,6 @@
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"
 	},
-	"dependencies": {
-		"react": "^16.6.0",
-		"react-dom": "^16.6.0"
-	},
 	"devDependencies": {
 		"@types/enzyme": "^3.1.14",
 		"@types/jest": "^23.3.9",
@@ -21,6 +17,8 @@
 		"enzyme-adapter-react-16": "^1.6.0",
 		"jest-chain": "^1.0.5",
 		"jest-enzyme": "^7.0.0",
+		"react": "^16.6.0",
+		"react-dom": "^16.6.0",
 		"react-scripts": "^2.1.0",
 		"typescript": "^3.1.5"
 	},
