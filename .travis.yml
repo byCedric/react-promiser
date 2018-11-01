@@ -1,0 +1,21 @@
+---
+language: node_js
+node_js:
+  - node
+  - lts/*
+
+os:
+  - linux
+  - osx
+
+cache:
+  directories:
+    - node_modules
+
+install:
+  - npm install
+
+script:
+  - npx tsc
+  - npx react-scripts test --coverage
+  - npm run build
